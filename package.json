@@ -1,0 +1,12 @@
+{
+  "name": "skills",
+  "private": true,
+  "scripts": {
+    "check": "ultracite check",
+    "fix": "ultracite fix"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.4.14",
+    "ultracite": "7.6.3"
+  }
+}
