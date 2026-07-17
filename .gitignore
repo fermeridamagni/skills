@@ -114,3 +114,6 @@ dist
 
 # macOS system files
 .DS_Store
+
+# Release publisher artifacts
+.release/
