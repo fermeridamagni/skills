@@ -300,13 +300,13 @@ const main = (): void => {
   const template = readFileSync(templatePath, "utf8");
   const workflowContent = template
     .replace(
-      "__PACKAGE_MANAGER_SETUP__",
+      "      # __PACKAGE_MANAGER_SETUP__",
       buildPackageManagerSetup(packageManager)
     )
     .replace("__INSTALL_COMMAND__", installCommand)
     .replace("__BUILD_COMMAND__", buildCommand)
     .replace(
-      "__PUBLISH_STEPS__",
+      "      # __PUBLISH_STEPS__",
       buildPublishSteps(packageManager, registries)
     );
 

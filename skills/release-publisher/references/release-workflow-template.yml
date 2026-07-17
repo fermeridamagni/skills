@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-__PACKAGE_MANAGER_SETUP__
+      # __PACKAGE_MANAGER_SETUP__
 
       - name: Install dependencies
         run: __INSTALL_COMMAND__
@@ -24,4 +24,4 @@ __PACKAGE_MANAGER_SETUP__
       - name: Build package
         run: __BUILD_COMMAND__
 
-__PUBLISH_STEPS__
+      # __PUBLISH_STEPS__

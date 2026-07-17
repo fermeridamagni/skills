@@ -42,16 +42,9 @@ Follow these steps in order.
 
 ### 1) Ensure release workflow exists
 
-Detect whether a release workflow already exists in `.github/workflows/`. If none exists, generate `.github/workflows/release.yml`:
+Detect whether a release workflow already exists in `.github/workflows/`. If none exists or it needs to be updated for a specific registry, read the corresponding guide in the `guides/` directory of this skill (e.g., `guides/npm.md` or `guides/github-packages.md`).
 
-```bash
-bun run .agents/skills/release-publisher/scripts/ensure-release-workflow.ts \
-  --registries npm,github-packages
-```
-
-Notes:
-- The script auto-detects the repo package manager and uses it in workflow commands.
-- Bun is preferred when the repository uses Bun.
+Use these guides to create or update `.github/workflows/release.yml`. If the registry requires manual setup from the user (e.g., configuring Trusted Publishing in NPM, or adding a scope in `package.json`), you MUST explain these steps to the user clearly.
 
 ### 2) Build release draft from commit history
 
@@ -65,6 +58,8 @@ Artifacts written to `.release/`:
 - `commits.json`
 - `release-notes.md`
 - `changelog-entry.md`
+
+**Important:** Because this step creates a `.release` folder in the project root, ensure that `.release/` or `.release` is added to the repository's `.gitignore` file to avoid pushing it into the remote repository.
 
 ### 3) **Mandatory confirmation checkpoint**
 
