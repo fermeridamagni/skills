@@ -1,4 +1,8 @@
-# Skills Registry
+<div align="center">
+  <img src="./assets/banner.png" alt="Magni Development Banner" width="100%" />
+</div>
+
+# Skills Registry by Engineering
 
 A professional and minimalistic registry of engineering skills to empower and extend agentic workflows.
 
