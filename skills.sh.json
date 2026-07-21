@@ -1,0 +1,11 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Project Managment",
+      "description": "A collection of skills for managing software projects.",
+      "skills": ["release-publisher"]
+    }
+  ]
+}
