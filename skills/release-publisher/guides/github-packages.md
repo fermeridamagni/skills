@@ -34,7 +34,7 @@ jobs:
           registry-url: "https://npm.pkg.github.com"
           package-manager-cache: false # never use caching in release builds
 
-      - name: Setup Bun (if applicable)
+      - name: Setup Bun # (if applicable)
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
