@@ -8,9 +8,9 @@ A professional and minimalistic registry of engineering skills to empower and ex
 
 ## 🛠️ Available Skills
 
-| Skill | Description | Path |
+| Skill | Description | Link |
 |-------|-------------|------|
-| **`release-publisher`** | Automate releasing packages, apps, and products to GitHub repositories. Handles version bumping, tags, changelogs, and GitHub Releases. | [`./skills/release-publisher`](./skills/release-publisher) |
+| **`release-publisher`** | Automate releasing packages, apps, and products to GitHub repositories. Handles version bumping, tags, changelogs, and GitHub Releases. | [View Skill](./skills/release-publisher) |
 
 ## 🚀 Installation
 
