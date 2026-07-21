@@ -5,6 +5,6 @@
     "globals": ["Bun"]
   },
   "files": {
-    "includes": ["!.agents/*"]
+    "includes": ["!.agents/*", "!.release/*"]
   }
 }
