@@ -19,7 +19,7 @@ You can install any skill from this registry using the `npx skills` command.
 Run the following command in your terminal:
 
 ```bash
-npx skills https://github.com/fermeridamagni/skills
+npx skills add https://github.com/fermeridamagni/skills
 ```
 
 ---
