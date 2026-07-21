@@ -42,9 +42,13 @@ Follow these steps in order.
 
 ### 1) Ensure release workflow exists
 
-Detect whether a release workflow already exists in `.github/workflows/`. If none exists or it needs to be updated for a specific registry, read the corresponding guide in the `guides/` directory of this skill (e.g., `guides/npm.md` or `guides/github-packages.md`).
+Detect whether a release workflow already exists in `.github/workflows/`. If none exists or it needs to be updated for a specific registry, read the corresponding guide in the `guides/` directory of this skill:
+- `guides/npm.md` for npm registry
+- `guides/github-packages.md` for GitHub Packages
+- `guides/vscode-marketplace.md` for VS Code Marketplace
+- `guides/open-vsx.md` for Open VSX Registry
 
-Use these guides to create or update `.github/workflows/release.yml`. If the registry requires manual setup from the user (e.g., configuring Trusted Publishing in NPM, or adding a scope in `package.json`), you MUST explain these steps to the user clearly.
+Use these guides to create or update `.github/workflows/release.yml`. If the registry requires manual setup from the user (e.g., configuring Trusted Publishing in NPM, setting up Azure DevOps PAT for VS Code Marketplace, claiming a namespace on Open VSX, or adding a scope in `package.json`), you MUST explain these steps to the user clearly.
 
 ### 2) Build release draft from commit history
 

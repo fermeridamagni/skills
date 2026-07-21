@@ -18,6 +18,12 @@
       "prompt": "Cut a prerelease v2.1.0-rc.1 for this app. Create release notes from recent commits, update changelog after my approval, and publish as a prerelease.",
       "expected_output": "Skill produces draft artifacts, asks for approval, applies changelog, and creates a prerelease GitHub Release with the requested version tag.",
       "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "We are releasing version 1.2.0 of our VS Code extension. Set up the GitHub release workflow to publish to both VS Code Marketplace and Open VSX, draft the release notes, and wait for confirmation before releasing.",
+      "expected_output": "Workflow detection runs, missing release.yml is generated with steps for @vscode/vsce and ovsx publishing using guides/vscode-marketplace.md and guides/open-vsx.md, draft release notes are generated, manual PAT setup instructions are explained, and explicit confirmation checkpoint is presented.",
+      "files": []
     }
   ]
 }

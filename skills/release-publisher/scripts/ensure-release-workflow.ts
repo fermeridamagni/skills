@@ -100,9 +100,9 @@ const buildPackageManagerSetup = (packageManager: PackageManager): string => {
 
   const baseSetup = [
     "      - name: Setup Node.js",
-    "        uses: actions/setup-node@v4",
+    "        uses: actions/setup-node@v7",
     "        with:",
-    "          node-version: 20",
+    "          node-version: 22",
     `          cache: ${packageManager}`,
   ];
 
@@ -156,9 +156,9 @@ const buildNpmPublishSteps = (packageManager: PackageManager): string[] => {
     steps.push(
       [
         "      - name: Configure npm registry auth",
-        "        uses: actions/setup-node@v4",
+        "        uses: actions/setup-node@v7",
         "        with:",
-        "          node-version: 20",
+        "          node-version: 22",
         "          registry-url: https://registry.npmjs.org",
       ].join("\n")
     );
@@ -184,9 +184,9 @@ const buildGitHubPackagesSteps = (packageManager: PackageManager): string[] => {
     steps.push(
       [
         "      - name: Configure GitHub Packages auth",
-        "        uses: actions/setup-node@v4",
+        "        uses: actions/setup-node@v7",
         "        with:",
-        "          node-version: 20",
+        "          node-version: 22",
         "          registry-url: https://npm.pkg.github.com",
       ].join("\n")
     );
