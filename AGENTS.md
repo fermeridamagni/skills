@@ -2,6 +2,8 @@
 
 This project is a collection of AI skills that can be used to enhance the capabilities of AI agents. Each skill is designed to perform specific tasks, such as publishing releases to various package registries or marketplaces.
 
+You can find the skills at: `/skills/*`
+
 ## Rules
 
 - Get and use up-to-date info with the Context7 MCP.
